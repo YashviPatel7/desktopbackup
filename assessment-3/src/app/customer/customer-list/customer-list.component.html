@@ -1,0 +1,58 @@
+<div class="contain-list padding-30">
+    <div class="contain-header">
+        <!-- <div class="btn color-blue padding-8-11">
+            <span class="fa fa-filter"></span>
+            <span class="m-left-10">Status</span>
+        </div> -->
+        <select id="inputState" class="btn padding-8-11 color-blue" [(ngModel)]="filterText">
+
+            <option>Open</option>
+            <option>Error</option>
+            <option>Inactive</option>
+            <option>Success</option>
+        </select>
+        <div>
+            <input type="text" placeholder="Search..." class="search-text" [(ngModel)]="searchText">
+            <button type="button" class="btn btn-primary m-left-10" (click)="addform()"> Add </button>
+        </div>
+    </div>
+    <!-- Start : table -->
+    <div class="table-wrapper">
+        <table class="table-content">
+            <thead>
+                <tr>
+                    <th class="table-head text-uppercase">#</th>
+                    <th class="table-head text-uppercase">name</th>
+                    <th class="table-head text-uppercase">description</th>
+                    <th class="table-head text-uppercase">status</th>
+                    <th class="table-head text-uppercase">rate</th>
+                    <th class="table-head text-uppercase">balance</th>
+                    <th class="table-head text-uppercase">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of data | search:searchText | filter:filterText" class="tablerow">
+                    <td class="td-data text-bold">{{i.id}}</td>
+                    <td class="td-data text-bold">{{i.name}}</td>
+                    <td class="td-data text-with">{{i.description}}</td>
+                    <td class="td-data">
+                        <span class="open border-background" *ngIf="i.status=='Open'">{{i.status}}</span>
+                        <span class="error border-background" *ngIf="i.status=='Error'">{{i.status}}</span>
+                        <span class="success border-background" *ngIf="i.status=='Success'">{{i.status}}</span>
+                        <span class="inactive border-background" *ngIf="i.status=='Inactive'">{{i.status}}</span>
+                    </td>
+                    <td class="td-data">{{i.rate | currency}}</td>
+                    <td class="td-data positive" *ngIf="i.balance>=0">{{i.balance | currency}}</td>
+                    <td class="td-data negative" *ngIf="i.balance<=0">{{i.balance | currency}}</td>
+                    <td class="td-data">
+                        <button type="button" class="fa fa-pencil border-0 color-white"
+                            (click)="customerEditwithid(i.id)"></button>
+                        <button type="button" class="fa fa-trash-can border-0 color-red m-left-10"
+                            (click)="customerDelete(i.id)"></button>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

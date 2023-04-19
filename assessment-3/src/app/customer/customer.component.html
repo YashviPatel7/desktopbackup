@@ -1,0 +1,5 @@
+<app-customer-form *ngIf="toggle" (cancelEvent)="closeform($event)" [customerData]="customer"
+    (addevent)="addevent($event)" (updateData)="updatecustomerdata($event)"></app-customer-form>
+
+<app-customer-list (myEvent)="callingEvent($event)" (editEvent)="editEvent($event)" [data]="data1"
+    (deleteEvent)="customerDelete($event)"></app-customer-list>

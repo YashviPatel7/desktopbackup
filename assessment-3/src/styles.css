@@ -1,0 +1,282 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #464F60;
+    --fn-14: 14px;
+    --fn-13: 13px;
+    --fw-600: 600;
+    --fw-400: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+}
+
+app-customer {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%
+}
+
+app-customer-list {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%
+}
+
+.contain-list {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%
+}
+
+.table-wrapper {
+    overflow: auto;
+}
+
+/*helper classes*/
+.m-left-10 {
+    margin-left: 10px;
+}
+
+.m-left-20 {
+    margin-left: 20px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.bg-white {
+    background: white;
+}
+
+.padding-8-11 {
+    padding: 8px 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.m-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.flex-glow-1 {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+/*form classes*/
+.form {
+    min-width: 400px;
+    max-width: 400px;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--black);
+    opacity: .5;
+}
+
+.form-wraaper {
+    position: relative;
+    z-index: 2;
+    overflow: auto;
+    height: 100%;
+}
+
+.form {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.form-controls {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--gray);
+}
+
+.title-header {
+    font-size: var(--fn-14);
+    font-weight: var(--fw-600);
+    color: var(--gray);
+}
+
+.header-form {
+    border-bottom: 2px solid #bebebe;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.form-footer {
+    border-top: 2px solid #bebebe;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.form-lable,
+.table-head {
+    font-size: var(--fn-13);
+    font-weight: var(--fw-600);
+    color: var(--gray);
+}
+
+.customer-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 35px;
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+
+/* input.ng-valid {
+    border-left: 5px solid green;
+} */
+
+/*aleart */
+.alert {
+    padding: 20px;
+    background-color: #a0f5d6;
+    color: rgb(110, 108, 108);
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+}
+
+.close {
+    padding: 5px;
+    cursor: pointer;
+    background-color: #9c9b9c;
+    font-weight: bold;
+    border: 0;
+    color: var(--white);
+}
+
+/*table classes*/
+
+
+td {
+    font-size: var(--fn-14);
+    font-weight: var(--fw-400);
+    color: var(--gray);
+    padding: 15px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #EBF0FA;
+}
+
+.table-content {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-head {
+    background-color: #EBF0FA;
+    padding: 10px 50px;
+    text-align: left;
+}
+
+.text-with {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100px;
+}
+
+.border-0 {
+    border: 0;
+}
+
+.color-white {
+    color: #868FA0;
+}
+
+.color-red {
+    color: #D12953;
+}
+
+.color-blue {
+    color: #4B85FA;
+}
+
+.contain-header {
+    padding: 25px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.search-text {
+    padding: 6px 12px;
+    margin: 10px 0px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.border-background {
+    border-radius: 10px;
+    background-color: #EBF0FA;
+    padding: 1px 10px;
+
+}
+
+.positive {
+    color: #14804A;
+}
+
+.negative {
+    color: #D12953;
+}
+
+.open {
+    color: #4F5AED;
+}
+
+.inactive {
+    color: #5A6376
+}
+
+.error {
+    color: #D12953;
+}
+
+.success {
+    color: #14804A;
+}

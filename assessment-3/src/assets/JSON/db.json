@@ -1,0 +1,148 @@
+{
+  "customer": [
+    {
+      "name": "annu4",
+      "description": "instockLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "Error",
+      "rate": 2000,
+      "balance": 1000,
+      "id": 7
+    },
+    {
+      "name": "anuuAnn Culhaneu",
+      "description": "instockLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "Open",
+      "rate": 2000,
+      "balance": 2000,
+      "id": 8
+    },
+    {
+      "name": "anuuAnnCulhaneu",
+      "description": "instockLorem ipsum fd dolor sit amet, consectetur . Nulla...",
+      "status": "Error",
+      "rate": 3000,
+      "balance": 1000,
+      "id": 12
+    },
+    {
+      "name": "anuuAnn Culhaneu",
+      "description": "instockLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "Success",
+      "rate": 2000,
+      "balance": 200,
+      "id": 13
+    },
+    {
+      "name": "annufhhdf",
+      "description": "instockLorem",
+      "status": "Success",
+      "rate": 300,
+      "balance": 2000,
+      "id": 14
+    },
+    {
+      "name": "vdg",
+      "description": "instockLorem ipsum dolor sit amet, consectetur . Nulla...",
+      "status": "Error",
+      "rate": 3000,
+      "balance": 2000,
+      "id": 15
+    },
+    {
+      "name": "ankddd fsds",
+      "description": "ins adada",
+      "status": "Inactive",
+      "rate": 2000,
+      "balance": 3000,
+      "id": 16
+    },
+    {
+      "name": "annu3",
+      "description": "instockLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "Error",
+      "rate": 3444,
+      "balance": 2000,
+      "id": 17
+    },
+    {
+      "name": "annu",
+      "description": "instockLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "Open",
+      "rate": 535,
+      "balance": 22424,
+      "id": 18
+    },
+    {
+      "name": "asdsdsd",
+      "description": "sdsdsds dfsf dsdasfaf",
+      "status": "Inactive",
+      "rate": 2323,
+      "balance": -23,
+      "id": 19
+    },
+    {
+      "name": "annusas",
+      "description": "dfaff",
+      "status": "Inactive",
+      "rate": 234324,
+      "balance": -2424,
+      "id": 20
+    },
+    {
+      "name": "anufffff",
+      "description": "instockLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "Inactive",
+      "rate": 353,
+      "balance": 2323,
+      "id": 21
+    },
+    {
+      "name": "annu",
+      "description": "instockLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "Inactive",
+      "rate": 2242,
+      "balance": -28,
+      "id": 22
+    },
+    {
+      "name": "annu",
+      "description": "instockLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "Open",
+      "rate": 4343,
+      "balance": -2323,
+      "id": 23
+    },
+    {
+      "name": "anuuAnn Culhaneu",
+      "description": "instockLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "Error",
+      "rate": 53535,
+      "balance": 4242,
+      "id": 24
+    },
+    {
+      "name": "annu",
+      "description": "instockLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "Inactive",
+      "rate": 25575,
+      "balance": -45556,
+      "id": 25
+    },
+    {
+      "name": "annu",
+      "description": "instockLorem ipsum dolor sit amet, consectetur . Nulla...",
+      "status": "Open",
+      "rate": 2000,
+      "balance": -2000,
+      "id": 26
+    },
+    {
+      "name": "annu",
+      "description": "instockLorem ipsum dolor sit amet, consectetur . Nulla...",
+      "status": "Open",
+      "rate": 3000,
+      "balance": 2000,
+      "id": 27
+    }
+  ]
+}

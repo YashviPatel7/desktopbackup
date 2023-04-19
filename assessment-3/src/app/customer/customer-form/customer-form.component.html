@@ -1,0 +1,68 @@
+<!-- Start : form -->
+<div class="form bg-white border form-wraaper">
+    <div *ngIf="alert" class="alert" role="alert">
+        <strong>Success ! </strong> Your data {{mag}} successfully !.
+        <button type="button" (click)="closeAlert()" class="close" data-bs-dismiss="alert" aria-label="close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="header-form">
+        <h1 class="title-header text-uppercase">
+            Add Customer
+        </h1>
+    </div>
+    <form class="customer-form" [formGroup]="customerForm" (ngSubmit)="changeFunction ? addcustomer() : Editcustomer()">
+
+        <div class="controls-wrapper p-20">
+            <div class="form-row m-bottom-15 ">
+                <label for="name" class="form-lable text-uppercase">name</label>
+                <input class="form-control" formControlName="name" type="text" id="name" placeholder="Enter Name" />
+                <span class="text-danger"
+                    *ngIf="!customerForm.get('name')?.valid && customerForm.get('name')?.touched && customerForm.get('name')?.errors?.['required']">required
+                </span>
+                <span class="text-danger"
+                    *ngIf="!customerForm.get('name')?.valid && customerForm.get('name')?.touched && customerForm.get('name')?.errors?.['pattern']">please
+                    Length should be minimum 3 max 25
+                </span>
+            </div>
+            <div class="form-row m-bottom-15 ">
+                <label for="descrip" class="form-lable text-uppercase">description</label>
+                <input class="form-control" formControlName="description" type="text" id="descrip"
+                    placeholder="Enter description" />
+                <span class="text-danger"
+                    *ngIf="!customerForm.get('description')?.valid && customerForm.get('description')?.touched && customerForm.get('description')?.errors?.['required']">required
+                </span>
+                <span class="text-danger"
+                    *ngIf="!customerForm.get('description')?.valid && customerForm.get('description')?.touched && customerForm.get('description')?.errors?.['pattern']">please
+                    Length should be minimum 3 max 150
+                </span>
+            </div>
+            <div class="form-row m-bottom-15 ">
+                <label for="inputState" class="form-lable text-uppercase">status</label>
+                <select id="inputState" class="form-control" formControlName="status" placeholder="Select Status">
+                    <option>Open</option>
+                    <option>Error</option>
+                    <option>Inactive</option>
+                    <option>Success</option>
+                </select>
+            </div>
+            <div class="form-row m-bottom-15 ">
+                <label for="rate" class="form-lable text-uppercase">rate</label>
+                <input class="form-control" formControlName="rate" type="number" id="rate" placeholder="Enter Rate" />
+            </div>
+            <div class="form-row m-bottom-15 ">
+                <label for="balance" class="form-lable text-uppercase">balance</label>
+                <input class="form-control" formControlName="balance" type="number" id="balance"
+                    placeholder="Enter Balance" />
+            </div>
+        </div>
+        <div class="form-footer">
+            <button type="button" class="btn btn-secondary" (click)="formClose()">cancel</button>
+            <button class="btn btn-primary m-left-20" type="submit"
+                [disabled]="!customerForm.valid">{{btnText}}</button>
+        </div>
+    </form>
+
+</div>
+<!-- End : form -->
+<div class="overlay"></div>
