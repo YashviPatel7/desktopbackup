@@ -27,6 +27,7 @@ export class CustomerFormComponent {
     if (this.customerData) {
       console.log(this.customerData);
       this.customerForm.setValue({
+
         name: this.customerData.name,
         description: this.customerData.description,
         status: this.customerData.status,
