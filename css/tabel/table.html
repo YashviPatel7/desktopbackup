@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating table</title>
+</head>
+<style>
+    table,
+    th,
+    td {
+        border-collapse: collapse;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Resume</h1>
+    </header>
+    <!--Start : Tabel-->
+    <table cellspacing="0" style="background-color:#f5f5f5; width: 60%;">
+        <!--Start : table heading-->
+        <thead  style="border-top: 3px solid #505050;">
+            <tr>
+                <td colspan="3">
+                    <h1 style="margin: 0px; margin-top: 20px;">JONATHAN DOE</h1>
+                    <h3 style="margin: 0px; ">WEB DESIGNER, DIRECTOR</h3>
+                </td>
+                <td colspan="2">
+                    <button style="margin-top: 20px;">Download PDF</button><br>
+                    <a href="#" style="color: #ff0000;">name@vourdomain.com</a><br>
+                    <span>(313)-867-5309</span>
+                </td>
+            </tr>
+        </thead>
+        <!--End : table heading-->
+        <!--Start : table body-->
+        <tbody>
+            <tr>
+                <td colspan="1" style="width: 15%; font-size:20px; font-style: italic; padding: 15px;">Profile</td>
+                <td colspan="3">
+                    <p style="padding: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+                        voluptatibus Facere, voluptatibus<br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptatibus<br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptatibus</p>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2" style="font-size:20px; font-style: italic; padding: 15px;">Skills</td>
+                <td style="font-size: 23px;">
+                    <h4>Web Design</h4>
+                </td>
+                <td style="font-size: 23px;">
+                    <h4>Interface Design</h4>
+                </td>
+                <td style="font-size: 23px;">
+                    <h4>Project Direction</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, recusandae.Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Odit, recusandae.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, recusandae.Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Odit, recusandae.</p>
+                </td>
+                <td>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, recusandae.Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Odit, recusandae.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, recusandae.Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Odit, recusandae.</p>
+                </td>
+                <td>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, recusandae.Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Odit, recusandae.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, recusandae.Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Odit, recusandae.</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-size:20px; font-style: italic; padding: 15px;">Technical</td>
+                <td colspan="3">
+                    <!--Start : Inner table-->
+                    <table width="100%">
+                        <tr>
+                            <td style="width: 33%;">XHTML</td>
+                            <td>Jquery</td>
+                            <td>OS X</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>PHP</td>
+                            <td>windows XP/Vista</td>
+                        </tr>
+                        <tr>
+                            <td>Javascript</td>
+                            <td>CVS/Subversion</td>
+                            <td>Linux</td>
+                        </tr>
+                    </table>
+                    <!--End : Inner table-->
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2" style="font-size:20px; font-style: italic; padding: 15px;">Experience</td>
+                <td colspan="3" style="padding: 15px;"><span
+                        style="display: flex; justify-content: space-between; align-items: flex-end;">
+                        <h4 style="margin: 0px; font-size: 23px;">Facebook</h4>
+                        <span>2005-2007</span>
+                    </span>
+                    <h4 style="margin: 0px; font-weight: 100;">Senior Interface Designer</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, tenetur.<br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, recusandae.Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Odit, recusandae.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="padding: 15px;"><span
+                        style="display: flex; justify-content: space-between; align-items: flex-end;">
+                        <h4 style="margin: 0px; font-size: 23px;">Apple Inc.</h4>
+                        <span>2005-2007</span>
+                    </span>
+                    <h4 style="margin: 0px; font-weight: 100;">Junior Interface Designer</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, tenetur.<br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, recusandae.Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Odit, recusandae.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-size:20px; font-style: italic; padding: 15px;">Education</td>
+                <td colspan="3">
+                    <h4 style="margin: 0px; font-size: 22px; padding-left: 15px; padding-top: 15px;">Indiana University
+                    </h4>
+                    <span style="padding: 15px;">Dual Major -</span> <span
+                        style="font-size: 23px; padding-bottom: 15px;">4.0 GPA</span>
+                </td>
+            </tr>
+        </tbody>
+        <!--End : table body-->
+        <!--Start : table footer-->
+        <tfoot>
+            <tr>
+                <td colspan="4" style="text-align: center; padding: 15px; border-bottom: 3px solid #505050;">
+                    <span>Jonathan Doe-</span>
+                    <a href="#" style="color: #ff0000;">name@yourdomain.com</a>
+                    <span>-(343)-8675309</span>
+                </td>
+            </tr>
+            <span></span>
+        </tfoot>
+        <!--Start : table footer-->
+    </table>
+    <!--Start : Table-->
+</body>
+
+</html>

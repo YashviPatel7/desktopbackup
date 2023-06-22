@@ -1,0 +1,74 @@
+:root{
+    --gray: #4D5E80;
+    --gray-blue :#7D8FB3;
+    --gray-blue-60 :#6B7A99;
+    --fs-s : 13px;
+    --fs-md: 18px;
+}
+.btn-rounded-white{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100px;
+    margin-right: 15px;
+    border: 0px;
+}
+body{
+    background-color: #E0E0E0;;
+}
+.nav-item{
+    margin-top: 10px;
+    padding: 0px 15px 0px 15px;
+    display: inline-block;
+}
+.nav-link{
+    text-decoration: none;
+    color: var(--gray-blue);
+}
+.nav-items{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--fs-s);
+    list-style: none;
+    display: inline-block;
+}
+.icone-img{
+    padding: 8px;
+}
+.logo-text{
+    margin-top: 18px;
+    padding-left: 15px;
+    font-style: normal;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: var(--fs-md);
+    color: var(--gray);
+    
+}
+.user-img{
+    padding-right: 15px;
+}
+.admin-img{
+    display: inline-block;
+    padding-right: 30px;
+}
+.user-name{
+    text-align: center;
+    vertical-align: super;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700; 
+    font-size: var(--fs-s); 
+    color: var(--gray-blue-60);
+}
+.float-end{
+    display: inline-block;
+    float: right;
+}
+/*.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:#E62E7B;
+}*/
