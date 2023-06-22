@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Form</title>
+</head>
+<body>
+    <header>
+        <h1>Travel Authorization Form</h1>
+    </header>
+    <!--Start : Form-->
+    <form>
+        <!--Start : Section A-->
+        <h2>Section A: Client Information</h2><hr>
+        <label for="tname">Title:</label>
+        <input type="text" id="tname" name="tname" required><br>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="mname">Middle name:</label>
+        <input type="text" id="mname" name="mname" required><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" required><br>
+        <lable for="email">Email address:</lable>
+        <input type="email" id="email" name="email" required><br>
+        <lable for="number">Phone number:</lable>
+        <input type="number" id="nos" name="number" required><br>
+        <!--Start : Section B-->
+        <h2>Section B: Travel Information</h2><hr>
+        <label for="airlinename">Airline name:</label>
+        <select id="airline" name="airlinenames" required>
+            <option value="indigo">IndiGo</option>
+            <option value="airindia">Air India</option>
+            <option value="trujet">TruJet</option>
+            <option value="vistara">Vistara</option>
+        </select><br>
+        <label for="dname">Destination:</label>
+        <input type="text" id="dname" name="dname" required><br>
+        <label for="leavedate">Leave date:</label>
+        <input type="date" id="leave" name="leavedate" required><br>
+        <label for="returndate">Return date:</label>
+        <input type="date" id="return" name="returndate" required><br>
+        <lable for="ecost">Estimated cost:</lable>
+        <input type="number" id="cost" name="ecost" required><br>
+        <lable for="custvisit">Includes customer visit ? </lable>
+        <input type="checkbox" id="cust" name="custvisit" required>
+        <p>Payment method used:</p>
+        <input type="radio" id="cash" name="mony" required>
+        <label for="cash">Cash</label><br> 
+        <input type="radio" id="credit" name="mony" required>
+        <label for="cash">Credit card</label><br> 
+        <input type="radio" id="check" name="mony" required>
+        <label for="cash">Check</label><br> 
+        <lable for="purpose">Purpose of travel:</lable>
+        <textarea id="purpose" name="purpose" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

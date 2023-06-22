@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating table</title>
+</head>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <header>
+        <h1>JONATHAN DOE</h1>
+        <h3>WEB DESIGNER, DIRECTOR</h3>
+        <!--Start : navigation-->
+        <nav>
+            <ul>
+                <li><button>Download PDF</button></li>
+                <li><a href="#">name@vourdomain.com</a></li>
+                <li>(313)-867-5309</li>
+            </ul>
+        </nav>
+        <!--End : navigation-->
+    </header>
+    <!--Start : Tabel-->
+    <table cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th colspan="3">
+                    JONATHAN DOE
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <td colspan="1" rowspan="6">
+                <!--Start : Inner Tabel1-->
+                <table>
+                    <tr>
+                        <th colspan="1">Profile</th>
+                    </tr>
+                    <tr>
+                        <td><img src="../table/assets/images/photo.jpeg" height="100px" width="100px" alt="photo"></td>
+
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quisquam.</td>
+                    </tr>
+                </table>
+                 <!--End : Inner Table1-->
+            </td>
+            <td colspan="1">
+                <!--Start : Inner Tabel2-->
+                <table>
+                    <tr>
+                        <th colspan="3">Skills</th>
+                    </tr>
+                    <tr>
+                        <th>Web Design</th>
+                        <th>Interface Design</th>
+                        <th>Project Direction</th>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                        <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, vel!</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ullam?</td>
+                    </tr>
+                </table>
+                 <!--End : Inner Table2-->
+            </td>
+            <td colspan="1">
+                <!--Start : Inner Tabel3-->
+                <table>
+                    <tr>
+                        <th colspan="3">Technical</th>
+                    </tr>
+                    <tr>
+                        <td>XHTML</td>
+                        <td>Jquery</td>
+                        <td>OS X</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>PHP</td>
+                        <td>windows XP/Vista</td>
+                    </tr>
+                    <tr>
+                        <td>Javascript</td>
+                        <td>CVS/Subversion</td>
+                        <td>Linux</td>
+                    </tr>
+                </table>
+                <!--End : Inner Table3-->
+            </td>
+            <tr>
+                <th colspan="2">Experience</th>
+            </tr>
+            <tr>
+                <th>Facebook<div>Senior Interface Designer</div>
+                </th>
+                <th colspan="1">Apple Inc.<div>Junior Interface Designer</div>
+                </th>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, tenetur.</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, vel!</td>
+            </tr>
+            <tr>
+                <th colspan="2">Education</th>
+            </tr>
+            <tr>
+                <td colspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, tenetur.</td>
+            </tr>
+        </tbody>
+    </table>
+    <!--End : Table-->
+    <footer>
+        <span>Jonathan Doe-</span>
+        <a href="#">name@yourdomain.com</a>
+        <span>-(343)-8675309</span>
+    </footer>
+</body>
+</html>
