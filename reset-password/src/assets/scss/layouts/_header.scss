@@ -1,0 +1,76 @@
+.header-nav {
+    border-bottom: 1px solid $nav-border;
+    padding: 0 160px;
+
+    .header {
+        .navbar-brand {
+            font-family: $font-family-baloo;
+            cursor: pointer;
+            font-size: 30px;
+            margin-bottom: 0;
+            margin-top: 0;
+            font-weight: 700;
+            font-size: 30px;
+            color: $text-primary;
+        }
+
+        .logo-img {
+            height: 40px;
+            width: 50px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.nav {
+    width: 100%;
+    max-width: 520px;
+    .nav-item {
+        color: $text-primary;
+        font-weight: 600;
+        font-size: 16px;
+
+        &.li-book-history {
+            padding: 0 60px;
+        }
+
+        .nav-link {
+            padding: 20px 0;
+            &:active, &.active {
+                border-bottom: 2px solid $primary;
+            }                       
+        }
+    }
+}
+
+.user-action {
+    cursor: pointer;
+
+    .nav-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        background-color: $bg-grey;
+
+        .search-icon {
+            height: 18px;
+            width: 18px;
+        }
+
+        .bell-icon {
+            height: 20px;
+            width: 18px;
+        }
+
+        .user-icon {
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    .btn-logout {
+        background-color: $dark-yellow;
+        color: $white;
+    }
+}

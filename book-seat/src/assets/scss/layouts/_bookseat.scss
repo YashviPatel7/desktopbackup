@@ -1,0 +1,85 @@
+.red-chair {
+    background-color: $red-chair;
+    border-radius: 2px;
+    width: 18px;
+    height: 18px;
+}
+
+.blue-chair {
+    background-color: $blue-chair;
+    border-radius: 2px;
+    width: 18px;
+    height: 18px;
+}
+
+.green-chair {
+    background-color: $green-chair;
+    border-radius: 2px;
+    width: 18px;
+    height: 18px;
+}
+
+.yellow-chair {
+    background-color: $yellow-chair;
+    border-radius: 2px;
+    width: 18px;
+    height: 18px;
+}
+
+.gray-chair {
+    background-color: $gray-chair;
+    border-radius: 2px;
+    width: 18px;
+    height: 18px;
+}
+
+.ng-select-size {
+    width: 200px;
+}
+
+button {
+    border: 0;
+}
+
+.chair {
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+}
+
+.bookseat-reserved {
+    background-image: url(../../images/reserved.png);
+}
+
+.bookseat-available {
+    background-image: url(../../images/available.png);
+}
+
+.bookseat-booked {
+    background-image: url(../../images/booked.png);
+}
+
+.bookseat-unassigned {
+    background-image: url(../../images/unassigned.png);
+}
+
+.bookseat-unavailable {
+    background-image: url(../../images/unavailable.png);
+}
+
+.bookseat-content-section {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+input[type="date"] {
+    background-color: #0080ff;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}

@@ -1,0 +1,73 @@
+.sign-in {
+    .sign-in-h3 {
+        font-size: $sign-in-h3-font-size;
+        font-weight: $font-weight-bold;
+        color: $text-primary;
+        margin-bottom: $margin-bottom-base*2;
+    }
+
+    .input-placeholder-style {
+        outline: 0;
+        font-weight: $font-weight-normal;
+        font-size: $font-size-lg;
+    }
+
+    ::placeholder {
+        color: $text-muted;
+    }
+
+    .border-style-email {
+        border-bottom: 1px solid $border-solid;
+        padding-bottom: 11px;
+
+    }
+
+    .border-style-password {
+        border-bottom: 1px solid $border-solid;
+        padding-bottom: 10.96px;
+        margin-top: 30px;
+    }
+
+    .show-password {
+        border-style: none;
+        background: $white;
+    }
+
+    .forgot-password {
+        text-align: right;
+        font-weight: $font-weight-semibold;
+        font-size: $font-size-sm;
+        color: $text-primary;
+
+        margin-top: $margin-bottom-base;
+        margin-bottom: $margin-bottom-base;
+    }
+
+    .sign-in-button {
+        height: 49.92px;
+        background: $primary;
+        color: $white;
+        font-size: $font-size-lg;
+        border-radius: 4px;
+        font-weight: $font-weight-semibold;
+        margin-bottom: 107px;
+    }
+
+    .footer-text {
+        color: $text-muted;
+        font-weight: $font-weight-semibold;
+        font-size: $font-size-base ;
+    }
+
+    .footer-link {
+        color: $text-primary;
+        font-weight: $font-weight-semibold;
+        font-size: $font-size-base ;
+
+    }
+
+    .alert {
+        font-size: 14px;
+        color: red;
+    }
+}

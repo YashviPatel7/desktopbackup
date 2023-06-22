@@ -1,0 +1,49 @@
+$font-weight-bold:700;
+$title-font-size:28px;
+$white:#FFFFFF;
+$primary:#2880FC;
+$text-gray-400: #8694AA;
+$text-primary:#031837;
+
+.form-container{
+    width: 100%;
+    
+   
+
+}
+.btn-submit{
+    
+    width: 100%;
+    display: inline;
+    color:$white ;
+    background-color:$primary ;
+}
+.form-title{
+    font-size:$title-font-size ;
+    font-weight:$font-weight-bold;
+    margin-bottom: 41px;
+    
+}
+.icon{
+    width: 
+    20px;
+}
+.outline-0
+.input-outline::placeholder{
+    outline: 0; 
+    border: none;
+    color:$text-gray-400 ;
+    font-size: 18px;
+    font-weight: 400;
+}
+.checkbox-text{
+ color:$text-primary ;
+ font-size: 14px;
+ font-weight: 600;
+}
+
+
+input:focus{
+    outline: none;
+}
+

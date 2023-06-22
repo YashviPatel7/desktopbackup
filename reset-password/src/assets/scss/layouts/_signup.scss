@@ -1,0 +1,50 @@
+
+.btn-submit{
+    width: 100%;
+    display: inline;
+    color:$white ;
+    background-color:$primary ;
+}
+.form-title{
+    font-size:$title-font-size ;
+    font-weight:$font-weight-bold;
+    margin-bottom: 41px;  
+}
+.icon{
+    width: 20px;
+}
+
+.input-outline::placeholder{
+    outline: 0; 
+    border: none;
+    color:$text-gray-400 ;
+    font-size: 18px;
+    font-weight: 400;
+}
+.input-outline{
+    color:black
+}
+
+.checkbox-text{
+ color:$text-primary ;
+ font-size: 14px;
+ font-weight: 600;
+}
+
+input:focus{
+    outline: none;
+}
+
+.show-password{
+    border-style: none;
+    background-color: $white;
+}
+.show-password:target{
+    border-style: none;
+    background-color: $white;
+}
+
+span{
+    font-size:14px;
+    color: red;
+}

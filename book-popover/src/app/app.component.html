@@ -1,0 +1,53 @@
+<!-- popover -->
+<div>
+  <button type="button" class="btn btn-outline-secondary me-2" placement="auto"
+    ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on top">
+    Popover on top
+  </button>
+</div><br><br>
+<!-- ----------------- -->
+
+
+
+<!-- model vertically -->
+<div>
+  <ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title">Modal title</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+      <p>One fine body&hellip;</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+    </div>
+  </ng-template>
+
+
+  <button class="btn btn-outline-primary mb-2 me-2" (click)="openVerticallyCentered(content)">
+    Modal vertically centered
+  </button>
+</div><br><br>
+<!-- ----------------- -->
+
+<!-- disable date -->
+
+<div>
+  <form class="form-inline">
+    <div class="form-group">
+      <div class="input-group">
+        <input class="form-control" placeholder="yyyy-mm-dd" [markDisabled]="isDisabled" name="dp" [(ngModel)]="model"
+          ngbDatepicker #d="ngbDatepicker" [placement]="'bottom'">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"></button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <hr />
+  <pre>Model: {{ model | json }}</pre>
+
+</div>
+<!-- ------------------------------ -->

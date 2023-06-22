@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <label for="box">box</label>
+    </header>
+    <main class="main">
+        <input type="checkbox" id="box">
+        <aside class="sidebar">
+            <p class="pragrap"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, ad. Quos,
+                exercitationem impedit? Nostrum
+                est
+                debitis dolor sed laboriosam magni placeat. Quis, totam! Error, quidem nihil? Praesentium aliquam
+                similique
+                numquam.</p>
+
+        </aside>
+        <section class="wrapper">
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&reg;&quest;&gt;&lt;&amp;&ndash;&trade;&mdash;hello</p>
+
+        </section>
+    </main>
+
+
+
+    <script>
+        const e = [{
+            name: "yashvi",
+            lname: 'patel'
+        }];
+        const d = e.map((item) => {
+            return { ...item.fullname = item.name + item.lname }
+        })
+        console.log(e);
+
+        var a = ['ravi', 'viral', 'yashvi']
+
+        a.forEach((function (value, index) {
+            console.log(index + " " + value);
+        }));
+    </script>
+</body>
+
+</html>

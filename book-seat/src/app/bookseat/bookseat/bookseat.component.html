@@ -1,0 +1,86 @@
+<!-- <p>bookseat works!</p> -->
+<div class="p-3">
+    <header class="d-flex justify-content-between align-items-center my-3">
+        <h5 class="fw-bold">Book Seat</h5>
+        <div class="d-flex">
+            <label for="date">Date</label>
+            <input type="date" name="date">
+            <label for="city">City</label>
+
+            <ng-select [items]="cities" bindLabel="name" bindValue="id" class="ng-select-size"></ng-select>
+
+            <label for="floor">Floor</label>
+            <ng-select [items]="floors" bindLabel="name" bindValue="id" class="ng-select-size"></ng-select>
+        </div>
+    </header>
+    <main class="bookseat-content-section">
+        <div class="d-flex justify-content-between align-items-center my-3">
+            <h6 class="fw-bold">1st Floor</h6>
+            <div class="d-flex">
+                <div class="d-flex p-2">
+                    <div class="red-chair me-2"></div>
+                    <span>Reserved</span>
+                </div>
+                <div class="d-flex p-2">
+                    <div class="green-chair me-2"></div>
+                    <span>Available</span>
+                </div>
+                <div class="d-flex p-2">
+                    <div class="blue-chair me-2"></div>
+                    <span>Booked</span>
+                </div>
+                <div class="d-flex p-2">
+                    <div class="yellow-chair me-2"></div>
+                    <span>Unavailable</span>
+                </div>
+                <div class="d-flex p-2">
+                    <div class="gray-chair me-2"></div>
+                    <span>Unassigned</span>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let s of [1,2,3,4,5,6,7,8,9,10]">
+                        <td>{{s}}</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let i of status">
+                        <td>
+                            <button class="chair bookseat-reserved" *ngIf="i.name=='reserved'"></button>
+                            <button class="chair bookseat-booked" *ngIf="i.name=='booked'"></button>
+                            <button class="chair bookseat-unavailable" *ngIf="i.name=='unavailable'"></button>
+                            <button class="chair bookseat-unassigned" *ngIf="i.name=='unassigned'"></button>
+                            <button class="chair bookseat-available" *ngIf="i.name=='available'"></button>
+                        </td>
+                        <td>
+                            <button class="chair bookseat-unassigned" *ngIf="i.name=='unassigned'"></button>
+                            <button class="chair bookseat-reserved" *ngIf="i.name=='reserved'"></button>
+                            <button class="chair bookseat-available" *ngIf="i.name=='available'"></button>
+                            <button class="chair bookseat-booked" *ngIf="i.name=='booked'"></button>
+                            <button class="chair bookseat-unavailable" *ngIf="i.name=='unavailable'"></button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </main>
+</div>
